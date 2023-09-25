@@ -74,5 +74,6 @@ static const struct arg args[] = {
   { ram_perc, "| %s ", NULL },
   { uid, "| u (%s", NULL },
   { gid, ",%s) ", NULL },
+  { perf_mode, "< %s >", NULL },
   { datetime, "| %s ", "%y-%m-%d %a %H:%M:%S" },
 };

@@ -73,5 +73,6 @@ static const struct arg args[] = {
   { disk_free, "| [:/home] f:%s", "/home" },
   { disk_perc, " (f:%s%%) ", "/home" },
   { ram_perc, "| RAM  %s%% ", NULL },
+  { perf_mode, " < %s > ", NULL },
   { datetime, "| %s", "%y-%m-%d %a %H:%M:%S" },
 };

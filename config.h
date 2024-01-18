@@ -66,13 +66,12 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-  { datetime, "%s", "%F %T" },
-  { ipv4, "| %s ", "enp34s0" },
-  { leaked_ip, "| %s ", NULL },
-  { cpu_perc, "| %s ", NULL },
-  { cpu_freq, " %s ",  NULL },
-  { ram_perc, "| %s ", NULL },
-  { uid, "| u (%s", NULL },
-  { gid, ",%s) ", NULL },
-  { datetime, "| %s ", "%y-%m-%d %a %H:%M:%S" },
+  { ipv4, " [IP] %s ", "enp34s0" },
+  { cpu_perc, "| CPU  %s%% ", NULL },
+  { disk_free, "| [ :/] f:%s", "/" },
+  { disk_perc, " (f:%s%%)", "/" },
+  { disk_free, "| [:/home] f:%s", "/home" },
+  { disk_perc, " (f:%s%%) ", "/home" },
+  { ram_perc, "| RAM  %s%% ", NULL },
+  { datetime, "| %s", "%y-%m-%d %a %H:%M:%S" },
 };
